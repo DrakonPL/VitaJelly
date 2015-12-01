@@ -169,8 +169,10 @@ int main()
         }
 		
 		//Update physic
-		for (int i = 0; i < 3;i++)
-			mWorld->update(1.0f/130.0f);
+		//1. method
+		for (int i = 0; i < 4;i++)
+			mWorld->update(1.0f/240.0f);
+
 
 		//start drawing
         vita2d_start_drawing();
