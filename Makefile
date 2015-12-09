@@ -10,7 +10,7 @@ PREFIX  	= arm-vita-eabi
 CC      	= $(PREFIX)-gcc
 CXX      	= $(PREFIX)-g++
 CFLAGS  	= -Wl,-q -Wall -O3
-CXXFLAGS  	= -Wl,-q -Wall -O3 -std=c++11
+CXXFLAGS  	= -std=c++11 -Wall -O3 -ftree-vectorize -mfloat-abi=hard -ffast-math -fsingle-precision-constant -ftree-vectorizer-verbose=2 -fopt-info-vec-optimized
 ASFLAGS 	= $(CFLAGS)
 
 all: $(TARGET).velf
