@@ -321,5 +321,7 @@ int main()
     vita2d_fini();
     vita2d_free_font(font);
 
+    sceKernelExitProcess(0);
+
     return 0;
 }
